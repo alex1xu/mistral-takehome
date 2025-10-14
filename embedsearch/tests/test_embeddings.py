@@ -21,6 +21,7 @@ class TestEmbeddingClient:
         
         assert client.mock_mode is True
     
+    @patch.dict(os.environ, {}, clear=True)
     def test_mock_embed_single_text(self):
         """Test mock embedding of single text."""
         client = EmbeddingClient(api_key=None)
