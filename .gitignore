@@ -1,1 +1,3 @@
 embedsearch/venv/
+embedsearch/src/__pycache__/
+embedsearch/tests/__pycache__/
