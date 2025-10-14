@@ -1,6 +1,6 @@
 # CLI Embedding Search Tool
 
-A CLI tool for indexing and searching text documents using Mistral embeddings
+A CLI tool for indexing and searching for text documents within a directory by similarity using Mistral embeddings
 
 ## Quick Start
 
@@ -16,7 +16,8 @@ export MISTRAL_API_KEY="your_api_key_here"
 
 **Index documents:**
 ```bash
-# Mock mode (no API calls)
+# --data-dir to specify text file directory
+# --mock to use a mock client
 python embedsearch.py index --data-dir ./docs --output index.json --mock
 
 # API mode
